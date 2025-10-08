@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO DO LISt</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="streak-panel">
+      <h2>🔥 GoalBoard</h2>
+      <h3>Streak: <span id="streak-count">0</span> days</h3>
+      <hr />
+      <div class="motivation">
+        <h4>💬 Today's Motivation</h4>
+        <p id="motivation-quote"></p>
+      </div>
+      <div class="summary">
+        <h4>📊 Progress Summary</h4>
+        <p><strong>Total Tasks:</strong> <span id="total-tasks">0</span></p>
+        <p><strong>Completed:</strong> <span id="completed-tasks">0</span></p>
+        <p><strong>Pending:</strong> <span id="pending-tasks">0</span></p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <h2>🎯 Task </h2>
+      <div class="main-buttons">
+        <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        <input type="date" id="taskDate" />
+        <input type="time" id="taskTime" />
+        <button id="addTaskBtn">Add </button>
+      </div>
+
+      <div class="charts-container">
+        <div class="chart-box">
+          <h3>Task List</h3>
+          <ul id="taskList"></ul>
+        </div>
+
+        <div class="chart-box">
+          <h3> Overview</h3>
+          <div class="chart-wrapper">
+            <canvas id="taskChart" width="200" height="200"></canvas>
+            <div id="chartCenterText" class="chart-center-text"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
