@@ -5,8 +5,14 @@ GoalBoard Dashboard is a web-based task management application that helps users 
 Features
 
 Add tasks with a title, date, and time.
+
 Delete tasks individually.
+
 View total, completed, and pending tasks.
+
 Track daily streaks.
+
 Display motivational quotes.
+
 Visualize task completion using a chart.
+
